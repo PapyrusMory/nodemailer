@@ -8,8 +8,7 @@ dotenv.config()
 mongoose.set('strictQuery', true)
 
 const MONGODB_URI =
-  process.env.MONGODB_URI ||
-  'mongodb+srv://mory:mory@cluster0.hpxrt.mongodb.net/monrpn'
+  process.env.MONGODB_URI
 
 mongoose
   .connect(MONGODB_URI!)
